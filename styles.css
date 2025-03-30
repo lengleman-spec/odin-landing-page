@@ -13,13 +13,13 @@ body {
 
 header {
   background-color: #1f2937;
-  width: 100%;
+  width: 100vw;
+  margin: auto;
 }
 
-header .hero img {
-  height: 300px;
-  width: 500px;
-  margin: auto;
+header div {
+  padding: 16px;
+  /* margin: 0 32px; */
 }
 
 .header-container {
@@ -29,25 +29,51 @@ header .hero img {
   margin: auto;
 }
 
-header div {
-  padding: 16px;
-  margin: 0 32px;
+div.header-links {
+  margin-left: auto;
 }
 
-.header-links a,
-.header-container a {
+.header-links a {
   text-decoration: none;
   color: #f9faf8;
-  /* using margin: auto vertically centered the header logo? */
-  padding: 15px;
+  padding: 6px 20px;
   margin: auto;
 }
+
+/* Issue: can't get the last link to line up vertically with image.
+- try header link 3 to margin: 0? */
+.header-links a:last-child {
+  margin-left: 0;
+  border: 1px solid red;
+}
+
+.logo-container div {
+  margin: auto;
+}
+
+.logo-container a {
+  text-decoration: none;
+  color: #f9faf8;
+  font-weight: 900;
+  font-size: 24px;
+  /* using margin: auto vertically centered the header logo? */
+  padding-left: 6px;
+  margin: auto;
+}
+
 /* --- HERO SECTION --- */
 .hero {
   display: flex;
   margin: auto;
+
   align-items: center;
   justify-content: space-between;
+}
+
+.hero img {
+  height: 300px;
+  width: 500px;
+  margin-left: auto;
 }
 
 /* Code below fixes the spacing issue with the word 'awesome' in the h1 by wrapping the word in a <span> then changing the span to display:block to bring it down to a new line */
@@ -59,9 +85,25 @@ header div {
   font-size: 48px;
   font-weight: 900;
   color: #f9faf8;
+  margin-bottom: 8px;
 }
 
 .hero-text p {
   font-size: 18px;
   color: #e5e7eb;
+}
+
+.header-hero-container {
+  margin: auto;
+}
+
+.hero .hero-text button {
+  margin-top: 12px;
+  padding: 6px 18px;
+  background-color: #3882f6;
+  color: #f9faf8;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
 }
