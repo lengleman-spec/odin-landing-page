@@ -13,22 +13,25 @@ body {
 
 header {
   background-color: #1f2937;
+  width: 100%;
 }
 
-header img {
+header .hero img {
   height: 300px;
-  width: auto;
+  width: 500px;
+  margin: auto;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  border: 3px solid red;
+  margin: auto;
 }
 
 header div {
   padding: 16px;
+  margin: 0 32px;
 }
 
 .header-links a,
@@ -36,12 +39,29 @@ header div {
   text-decoration: none;
   color: #f9faf8;
   /* using margin: auto vertically centered the header logo? */
-  margin: auto 18px;
+  padding: 15px;
+  margin: auto;
 }
-
 /* --- HERO SECTION --- */
 .hero {
   display: flex;
+  margin: auto;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Code below fixes the spacing issue with the word 'awesome' in the h1 by wrapping the word in a <span> then changing the span to display:block to bring it down to a new line */
+.hero span {
+  display: block;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #e5e7eb;
 }

@@ -11,8 +11,11 @@
     <header>
       <div class="header-container">
         <!-- <p>Header Logo</p> -->
-        <!-- cannot vertically center Logo in header?? -->
-        <a href="">Header Logo</a>
+        <!-- cannot vertically center Logo in header??
+              - solved using margin:auto -->
+        <div class="logo-container">
+          <a href="">Header Logo</a>
+        </div>
 
         <div class="header-links">
           <a href="">header link one</a>
@@ -21,13 +24,14 @@
         </div>
       </div>
 
+      <!--  HERO SECTION  -->
       <div class="hero">
         <div class="hero-text">
-          <h1>This Website is awesome</h1>
+          <h1>This Website is <span>awesome</span></h1>
           <p>This website has some good information on it.</p>
+          <button class="header-btn">Sign Up</button>
         </div>
 
-        <button class="header-btn">Sign Up</button>
         <img src="img/nature1.jpg" alt="placeholder image" />
       </div>
     </header>
