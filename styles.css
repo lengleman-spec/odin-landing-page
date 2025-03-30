@@ -24,9 +24,24 @@ header img {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  border: 3px solid red;
 }
 
-.header-links a {
+header div {
+  padding: 16px;
+}
+
+.header-links a,
+.header-container a {
   text-decoration: none;
   color: #f9faf8;
+  /* using margin: auto vertically centered the header logo? */
+  margin: auto 18px;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
