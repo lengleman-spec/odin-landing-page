@@ -42,10 +42,6 @@ div.header-links {
 
 /* Issue: can't get the last link to line up vertically with image.
 - try header link 3 to margin: 0? */
-.header-links a:last-child {
-  margin-left: 0;
-  border: 1px solid red;
-}
 
 .logo-container div {
   margin: auto;
@@ -113,6 +109,10 @@ div.header-links {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100vw;
+  height: 85vh;
 }
 
 .info-img {
@@ -120,15 +120,42 @@ div.header-links {
   gap: 40px;
 }
 
+.info-img figcaption {
+  text-align: center;
+  font-weight: 600;
+  padding: 16px 0;
+}
+
 .info h2 {
   font-size: 36px;
   font-weight: 900;
   color: #1f2937;
   text-align: center;
+  margin: 30px 0;
 }
 
 .info-img img {
   width: 200px;
   height: 200px;
-  border: #3882f6;
+  border: 3px solid #3882f6;
+  border-radius: 14px;
+}
+
+/*  QUOTE SECTION  */
+.quote {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 40px;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  font-size: 36px;
+  font-style: italic;
+}
+
+.quote blockquote {
+  padding: 20px 250px;
+}
+
+.quote figcaption {
+  padding-left: 700px;
 }
