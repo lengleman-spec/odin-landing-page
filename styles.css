@@ -144,19 +144,38 @@ div.header-links {
 /*  QUOTE SECTION  */
 .quote {
   width: 100vw;
-  height: 100vh;
+  height: 400px;
   padding-top: 40px;
   background-color: #e5e7eb;
   color: #1f2937;
-  font-size: 36px;
-  font-style: italic;
+  font-size: 26px;
 }
 
 .quote blockquote {
   padding: 20px 250px;
+  font-style: italic;
 }
 
 .quote figcaption {
   padding-left: 700px;
   font-weight: 700;
+}
+
+/* --- CALL TO ACTION SECTION --- */
+
+.cta section {
+  background-color: blue;
+}
+.cta-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+
+  width: 100vw;
+  height: 400px;
+  border: 2px solid red;
+}
+
+.cta-text {
 }
