@@ -197,3 +197,13 @@ div.header-links {
   border: 2px solid #f9faf8;
   border-radius: 8px;
 }
+
+/*  FOOTER SECTION  */
+.footer {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  padding: 32px;
+}
